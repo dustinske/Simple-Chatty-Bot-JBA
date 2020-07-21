@@ -36,13 +36,10 @@ def test():
     while True:
         print("Does this question actually matter?\n1. Yes.\n2. Sure.\n3. Probably.\n4. lmao no")
         answer = input()
-        if answer == "4":
-            continue
-        else:
+        while answer != "4":
             print("Please, try again.")
-            break
-
-    print('Completed, have a nice day!')
+        else:
+            print('Completed, have a nice day!')
 
 
 def end():
